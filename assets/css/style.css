@@ -12,5 +12,10 @@ body {
 
 header {
     background:beige;
-    
+}
+
+header > h1 {
+    text-align: center;
+    color:brown;
+    font-family: Arial, Helvetica, sans-serif;
 }
