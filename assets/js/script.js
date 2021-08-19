@@ -13,13 +13,32 @@ function receiveCompChoice() {
     const randomPick = (Math.floor(Math.random() *3));
     return compChoice[randomPick];
 }
-
-receiveCompChoice();
-
-
+ 
 function play(playerChoice) {
-    
+    const computerChoice = receiveCompChoice();
+    switch(playerChoice + computerChoice) {
+        case "rockscissors":
+        case "paperrock":
+        case "scissorspaper":
+            console.log("User Wins")
+        break;
+        case "rockpaper":
+        case "paperscissors":
+        case "scissorsrock":
+            console.log("user loses")
+        break;
+        case "rockrock":
+        case "paperpaper":
+        case "scissorsscissors":
+        console.log("it is a draw")
+        break;
+        
+
+
+    }
 }
+
+play("rock")
 
 function general() {
 
