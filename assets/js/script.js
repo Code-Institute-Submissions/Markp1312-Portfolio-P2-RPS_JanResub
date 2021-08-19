@@ -9,8 +9,9 @@ const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
 
 function receiveCompChoice() {
-    const compChoices = ["rock","paper","scissors"];
-    console.log(Math.random()) 
+    const compChoice = ["rock","paper","scissors"];
+    const randomPick = (Math.floor(Math.random() *3));
+    return compChoice[randomPick];
 }
 
 receiveCompChoice();
