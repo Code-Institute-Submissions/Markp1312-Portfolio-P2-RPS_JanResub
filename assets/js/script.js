@@ -20,21 +20,18 @@ function play(playerChoice) {
         case "rockscissors":
         case "paperrock":
         case "scissorspaper":
-            console.log("User Wins")
         break;
+        winner()
         case "rockpaper":
         case "paperscissors":
         case "scissorsrock":
-            console.log("user loses")
         break;
+        loser()
         case "rockrock":
         case "paperpaper":
         case "scissorsscissors":
-        console.log("it is a draw")
         break;
-        
-
-
+        draw()
     }
 }
 
