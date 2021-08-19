@@ -8,8 +8,16 @@ const rock_div = document.getElementById("rock");
 const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
 
+function receiveCompChoice() {
+    const compChoices = ["rock","paper","scissors"];
+    console.log(Math.random()) 
+}
+
+receiveCompChoice();
+
+
 function play(playerChoice) {
-    console.log("pooop" + playerChoice)
+    
 }
 
 function general() {
