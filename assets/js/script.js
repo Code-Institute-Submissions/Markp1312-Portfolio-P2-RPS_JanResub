@@ -23,12 +23,17 @@ function winner (player,comp) {
    
 }
  
-function loser() {
-    
+function loser(player,comp) {
+    computerScore++;
+    playerScore_span.innerHTML = userScore;
+    compScore_span.innerHTML = computerScore;
+    gameResult.innerHTML = comp + " beats " + player + ", you lose the game " 
 }
 
-function draw() {
-   
+function draw(player,comp) {
+    playerScore_span.innerHTML = userScore;
+    compScore_span.innerHTML = computerScore;
+    gameResult.innerHTML = comp + " equals " + player + ", it is a draw " 
 }
 
 function play(playerChoice) {
