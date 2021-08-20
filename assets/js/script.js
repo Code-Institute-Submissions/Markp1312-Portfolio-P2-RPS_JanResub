@@ -13,29 +13,40 @@ function receiveCompChoice() {
     const randomPick = (Math.floor(Math.random() *3));
     return compChoice[randomPick];
 }
+
+function winner () {
+    console.log("win")
+}
  
+function loser() {
+    console.log("lose")
+}
+
+function draw() {
+   console.log("draw")
+}
+
 function play(playerChoice) {
     const computerChoice = receiveCompChoice();
     switch(playerChoice + computerChoice) {
         case "rockscissors":
         case "paperrock":
         case "scissorspaper":
+        winner();
         break;
-        winner()
         case "rockpaper":
         case "paperscissors":
         case "scissorsrock":
+        loser();
         break;
-        loser()
         case "rockrock":
         case "paperpaper":
         case "scissorsscissors":
+        draw();
         break;
-        draw()
     }
 }
 
-play("rock")
 
 function general() {
 
