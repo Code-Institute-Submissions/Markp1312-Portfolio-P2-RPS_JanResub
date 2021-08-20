@@ -15,15 +15,17 @@ function receiveCompChoice() {
 }
 
 function winner () {
-    console.log("win")
+    userScore++;
+    playerScore_span.innerHTML = userScore;
+    compScore_span.innerHTML = computerScore;
 }
  
 function loser() {
-    console.log("lose")
+    
 }
 
 function draw() {
-   console.log("draw")
+   
 }
 
 function play(playerChoice) {
