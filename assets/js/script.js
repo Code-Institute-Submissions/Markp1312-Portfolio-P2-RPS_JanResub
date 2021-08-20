@@ -7,6 +7,7 @@ const compScore_span = document.getElementById("computerscore-span")
 const rock_div = document.getElementById("rock");
 const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
+const gameResult = document.getElementById("result-span");
 
 function receiveCompChoice() {
     const compChoice = ["rock","paper","scissors"];
@@ -14,10 +15,12 @@ function receiveCompChoice() {
     return compChoice[randomPick];
 }
 
-function winner () {
+function winner (player,comp) {
     userScore++;
     playerScore_span.innerHTML = userScore;
     compScore_span.innerHTML = computerScore;
+    gameResult.innerHTML = player + " beats " + comp + ", you are a winner "   
+   
 }
  
 function loser() {
@@ -34,17 +37,17 @@ function play(playerChoice) {
         case "rockscissors":
         case "paperrock":
         case "scissorspaper":
-        winner();
+        winner(playerChoice,computerChoice);
         break;
         case "rockpaper":
         case "paperscissors":
         case "scissorsrock":
-        loser();
+        loser(playerChoice,computerChoice);
         break;
         case "rockrock":
         case "paperpaper":
         case "scissorsscissors":
-        draw();
+        draw(playerChoice,computerChoice);
         break;
     }
 }
