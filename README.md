@@ -38,7 +38,7 @@ The familiar game of Rock, Paper, Scissors is played like this: at the same time
     * [Forking This Project](#forking-this-project)
     * [Cloning This Project](#cloning-this-project)
 * [Credits](#credits)
-* [Content](#content)
+
 
 ## User Experience - UX
 
