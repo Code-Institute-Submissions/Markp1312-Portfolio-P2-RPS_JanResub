@@ -1,104 +1,218 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock - Paper - Scissors
 
-Welcome Markp1312,
+# Introduction
+Project milestone 2 for Code Institute Full-stack development program: JavaScript Essentials.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+Rock/paper/scissors is a game that is played between a **player** and the **computer**.
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The familiar game of Rock, Paper, Scissors is played like this: at the same time, two players display one of three symbols: a rock, paper, or scissors. A rock beats scissors, scissors beat paper by cutting it, and paper beats rock by covering it. In this game the opponent is simulated by the computer
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+[The Live Project can be seen here](https://markp1312.github.io/Portfolio-P2-RPS/)
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+## README Table Content
 
-Another blue button should appear to click: _Open Browser_.
+* [Introduction](#introduction)
+* [User Experience UX](#user-experience---UX)
+* [Design](#Design)
+    * [Wireframe](#Wireframe)
+    * [Website Structure](#website-structure)
+    * [Colour Scheme](#colour-scheme)
+    * [Imagery](#Imagery)
+    * [Typography](#typography)
+    * [interactive Links](#interactive-links) 
+  
+* [Features](#features)  
+    * [Home Page](#home-page) 
+* [Future Features](#future-features)
+* [How to Play](#how-to-play)
+* [Technologies Used](#technologies-used)
+    * [Languages Used](#languages-used)
+    * [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
+* [Testing](#testing)
+* [Deployment](#deployment-this-project)
+    * [Deployment This Project](#deployment-this-project)
+    * [Forking This Project](#forking-this-project)
+    * [Cloning This Project](#cloning-this-project)
+* [Credits](#credits)
+* [Content](#content)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## User Experience - UX
 
-To log into the Heroku toolbelt CLI:
+ ### User Stories
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* As a visitor, I want to:
+  
+1. Play a simple game of Rock/Paper/Scissors against the computer.
+2. The UI needs to be intuitive and self explanatory.
+3. I want to see the scores.
+4. There needs to be a 50/50 chance of winning
+5. There needs to be clear messaging when a game is won.
+6. There needs to be clear messaging when a game is a draw.
+7. There needs to be clear messaging when a game is lost. 
+   
+   
+## Design
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Wireframe
+<br>
 
-------
+[Live Wireframe](https://lucid.app/lucidchart/f7175424-323e-400a-bd68-ebd82d3c0952/edit?invitationId=inv_623467ed-9a79-41bf-a5d6-0ae3cbe96994)
 
-## Release History
+<br>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Website Structure
+The website has been created as a one page game.
+The player score can be seen on the left and the computer score on the right
+The options that the player can choose are centralised in the middle of the page and the outcome of each game will be clearly displayed after each round played.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+#### Colour Scheme
+The main colour for this project is Beige.
+Beige is easy on the eye and gives the bright buttons a nice contrast.
+For the buttons I have chosen:
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+Rock : Green
+Paper : Red
+Scissors : Yellow
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+ #### Typography
+* Arial, Helvetica, sans-serif are being used for the fonts on the Webpage.
+      
+#### Imagery
+* 3 images were used.
+   - Rock
+   - Paper
+   - Scissors
+   - [Source of images](https://github.com/youra199/Rock-paper-scissors)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+  
+## Features
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Home Page 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![Home Page](./assets/images/Readme/../../Readme/Homepage.jpg)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* When the user enters the webpage there will be a intuitive interface that invites to start playing straight away.
+A main goal of the webpage is that the UI is self-explanatory and this has been achieved.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Future Features
+  
+### Reset game option.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* I am planning to add a feature to reset the game and players can start over again. At the moment this can only be done by refreshing the page.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### View past choices
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* I am planning to implement a table that will keep track of all the choices made by the player or the computer.
+This will give a overview of the choices made by either player over the course of the game.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+## How To Play
 
-## FAQ about the uptime script
+The Player will get the first turn.
+When selecting either Rock / Paper or Scissors the computer makes a random selection and the winner will be decided against the game logic.
 
-**Why have you added this script?**
+#### How to Start 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+Click any of the 3 buttons (Rock, Paper or Scissors will trigger the game)
 
-**How will this affect me?**
+#### The Game
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+ A rock beats scissors, scissors beat paper by cutting it, and paper beats rock by covering it.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Technologies Used
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Languages Used 
 
-**So….?**
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+* [javaScript](https://www.javascript.com/)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Frameworks - Libraries - Programs Used
 
-**Can I opt out?**
+* [Git](https://git-scm.com/)
+    * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+* [GitHub](https://github.com/)
+    * GitHub is used to store the project's code after being pushed from Git.
+* [VSCode](https://code.visualstudio.com/)
+    * VSCode was used to create and edit the website.
+  
+## Testing
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### [W3C Markup Validator](https://validator.w3.org)
+* The HTML files were validated through the W3C Validator, presenting no errors.
+ 
 
-**Anything more?**
+### [W3C CSS Validator](https://jigsaw.w3.org/css-validator) 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+* The CSS files were validated though the Jigsaw W3C Validator, presenting no errors.
+#### Results:
+* [Main CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmarkp1312.github.io%2FPortfolio-P2-RPS%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=nl)
+  
 
----
+### [Jshint](https://jshint.com/)
+* All JavaScript files were validated through JSHint, presenting no errors.
+* There are a few warning regarding ES6.
 
-Happy coding!
+![Jshint Result](./assets/images/Readme/../../Readme/JSHINT.jpg)
+
+The testing was done using the Google Chrome Browser. Chrome Developer Tools was used extensively.
+  
+## Deployment of This Project
+
+The website development was created in the "main" branch on Github. This branch was deployed using GitHub Pages.
+
+* This site was deployed by completing the following steps:
+
+1. Open [GitHub](https://github.com/).
+2. Click on the project to be deployed.
+3. Navigate to the "Settings".
+4. Navigate down to the "GitHub Pages".
+5. Click on "Check it out here!".
+6. Select the "main" branch and select "Save".
+7. The link to the live website was ready on the top.
+
+## Forking This Project
+* Fork this project following the steps:
+
+1. Open [GitHub](https://github.com/).
+2. Click on the project to be forked.
+3. Find the 'Fork' button at the top right of the page.
+4. Once you click the button the fork will be in your repository..
+
+## Cloning This Project
+
+* Clone this project following the steps:
+
+1. Open [GitHub](https://github.com/).
+2. Click on the project to be cloned.
+3. You will be provided with three options to choose from, HTTPS, SSH or GitHub CLI, click the clipboard icon in order to copy the URL.
+4. Once you click the button the fork will be in your repository.
+5. Open a new terminal.
+6. Change the current working directory to the location that you want the cloned directory.
+7. Type 'git clone' and paste the URL copied in step 3.
+8. Press 'Enter' and the project is cloned.
+
+## Credits
+
+### Information Sources/Resources
+
+* [W3Schools](https://www.w3schools.com/)
+
+* [Stack Overflow](https://stackoverflow.com/)
+* [freeCodeCamp ](https://www.youtube.com/c/Freecodecamp) , for their extensive Tutorials and best practices that helped with creation of this game.
+
+## Special Thanks
+
+ * Special thanks to my Mentor Gerard McBride.
+ * Thanks to Code Institute for reviewing my first project submission and amended the project as per feedback.
+
+
+ 
+
